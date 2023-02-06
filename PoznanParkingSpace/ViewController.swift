@@ -9,7 +9,5 @@ class ViewController: UIViewController {
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    let t = MainMenuAssembly().build()
-    present(t, animated: true)
   }
 }

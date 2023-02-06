@@ -1,21 +1,21 @@
 import Foundation
 
-//MARK: - View
-protocol MainMenuViewProtocol: class {
-    
+//  MARK: - View
+
+protocol MainMenuViewProtocol: AnyObject {
 }
 
-//MARK: - Presenter
-protocol MainMenuPresenterProtocol: class {
-    
+//  MARK: - Presenter
+
+protocol MainMenuPresenterProtocol: AnyObject {
 }
 
-//MARK: - Interactor
-protocol MainMenuInteractorProtocol: class {
-    
+//  MARK: - Interactor
+
+protocol MainMenuInteractorProtocol: AnyObject {
 }
 
-//MARK: - Router
-protocol MainMenuRouterProtocol: class {
-    
+//  MARK: - Router
+
+protocol MainMenuRouterProtocol: AnyObject {
 }
