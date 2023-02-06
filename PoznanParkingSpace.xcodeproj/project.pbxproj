@@ -10,9 +10,7 @@
 		B832336B29907D86006127D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832336A29907D86006127D1 /* AppDelegate.swift */; };
 		B832336D29907D86006127D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832336C29907D86006127D1 /* SceneDelegate.swift */; };
 		B832336F29907D86006127D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832336E29907D86006127D1 /* ViewController.swift */; };
-		B832337229907D86006127D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B832337029907D86006127D1 /* Main.storyboard */; };
 		B832337429907D87006127D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B832337329907D87006127D1 /* Assets.xcassets */; };
-		B832337729907D87006127D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B832337529907D87006127D1 /* LaunchScreen.storyboard */; };
 		B832338229907D87006127D1 /* PoznanParkingSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832338129907D87006127D1 /* PoznanParkingSpaceTests.swift */; };
 		B832338C29907D87006127D1 /* PoznanParkingSpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832338B29907D87006127D1 /* PoznanParkingSpaceUITests.swift */; };
 		B832338E29907D87006127D1 /* PoznanParkingSpaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832338D29907D87006127D1 /* PoznanParkingSpaceUITestsLaunchTests.swift */; };
@@ -40,9 +38,7 @@
 		B832336A29907D86006127D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B832336C29907D86006127D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B832336E29907D86006127D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B832337129907D86006127D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B832337329907D87006127D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B832337629907D87006127D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B832337829907D87006127D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B832337D29907D87006127D1 /* PoznanParkingSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoznanParkingSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B832338129907D87006127D1 /* PoznanParkingSpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoznanParkingSpaceTests.swift; sourceTree = "<group>"; };
@@ -102,9 +98,7 @@
 				B832336A29907D86006127D1 /* AppDelegate.swift */,
 				B832336C29907D86006127D1 /* SceneDelegate.swift */,
 				B832336E29907D86006127D1 /* ViewController.swift */,
-				B832337029907D86006127D1 /* Main.storyboard */,
 				B832337329907D87006127D1 /* Assets.xcassets */,
-				B832337529907D87006127D1 /* LaunchScreen.storyboard */,
 				B832337829907D87006127D1 /* Info.plist */,
 			);
 			path = PoznanParkingSpace;
@@ -231,9 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B832337729907D87006127D1 /* LaunchScreen.storyboard in Resources */,
 				B832337429907D87006127D1 /* Assets.xcassets in Resources */,
-				B832337229907D86006127D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,25 +287,6 @@
 			targetProxy = B832338829907D87006127D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B832337029907D86006127D1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B832337129907D86006127D1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B832337529907D87006127D1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B832337629907D87006127D1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B832338F29907D87006127D1 /* Debug */ = {
@@ -441,7 +414,7 @@
 				INFOPLIST_FILE = PoznanParkingSpace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +441,7 @@
 				INFOPLIST_FILE = PoznanParkingSpace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
