@@ -3,7 +3,7 @@ import UIKit
 class MainMenuPresenter: MainMenuPresenterProtocol {
   private var interactor: MainMenuInteractorProtocol
   private var router: MainMenuRouterProtocol
-  weak var view: MainMenuViewProtocol!
+  weak var view: MainMenuViewProtocol?
 
   init(
     view: MainMenuViewProtocol,
