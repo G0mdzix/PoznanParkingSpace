@@ -1,5 +1,5 @@
 import UIKit
 
 class MainMenuRouter: MainMenuRouterProtocol {
-    weak var view: UIViewController!
+  weak var view: UIViewController?
 }
