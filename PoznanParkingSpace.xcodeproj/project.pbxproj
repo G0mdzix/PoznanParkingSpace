@@ -14,6 +14,12 @@
 		B832338229907D87006127D1 /* PoznanParkingSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832338129907D87006127D1 /* PoznanParkingSpaceTests.swift */; };
 		B832338C29907D87006127D1 /* PoznanParkingSpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832338B29907D87006127D1 /* PoznanParkingSpaceUITests.swift */; };
 		B832338E29907D87006127D1 /* PoznanParkingSpaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832338D29907D87006127D1 /* PoznanParkingSpaceUITestsLaunchTests.swift */; };
+		B832341629908A8D006127D1 /* MainMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832340F29908A8D006127D1 /* MainMenuPresenter.swift */; };
+		B832341729908A8D006127D1 /* MainMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832341029908A8D006127D1 /* MainMenuRouter.swift */; };
+		B832341829908A8D006127D1 /* MainMenuModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832341129908A8D006127D1 /* MainMenuModuleProtocols.swift */; };
+		B832341929908A8D006127D1 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832341229908A8D006127D1 /* MainMenuViewController.swift */; };
+		B832341A29908A8D006127D1 /* MainMenuAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832341329908A8D006127D1 /* MainMenuAssembly.swift */; };
+		B832341B29908A8D006127D1 /* MainMenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832341429908A8D006127D1 /* MainMenuInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		B832338729907D87006127D1 /* PoznanParkingSpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoznanParkingSpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B832338B29907D87006127D1 /* PoznanParkingSpaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoznanParkingSpaceUITests.swift; sourceTree = "<group>"; };
 		B832338D29907D87006127D1 /* PoznanParkingSpaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoznanParkingSpaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B832340F29908A8D006127D1 /* MainMenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuPresenter.swift; sourceTree = "<group>"; };
+		B832341029908A8D006127D1 /* MainMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuRouter.swift; sourceTree = "<group>"; };
+		B832341129908A8D006127D1 /* MainMenuModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuModuleProtocols.swift; sourceTree = "<group>"; };
+		B832341229908A8D006127D1 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		B832341329908A8D006127D1 /* MainMenuAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuAssembly.swift; sourceTree = "<group>"; };
+		B832341429908A8D006127D1 /* MainMenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +107,11 @@
 		B832336929907D86006127D1 /* PoznanParkingSpace */ = {
 			isa = PBXGroup;
 			children = (
-				B832336A29907D86006127D1 /* AppDelegate.swift */,
-				B832336C29907D86006127D1 /* SceneDelegate.swift */,
-				B832336E29907D86006127D1 /* ViewController.swift */,
-				B832337329907D87006127D1 /* Assets.xcassets */,
+				B832340E299089FF006127D1 /* MainMenu */,
 				B832337829907D87006127D1 /* Info.plist */,
+				B832339B2990828E006127D1 /* Config */,
+				B832339A29908280006127D1 /* Assets */,
+				B832336E29907D86006127D1 /* ViewController.swift */,
 			);
 			path = PoznanParkingSpace;
 			sourceTree = "<group>";
@@ -119,6 +131,36 @@
 				B832338D29907D87006127D1 /* PoznanParkingSpaceUITestsLaunchTests.swift */,
 			);
 			path = PoznanParkingSpaceUITests;
+			sourceTree = "<group>";
+		};
+		B832339A29908280006127D1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B832337329907D87006127D1 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B832339B2990828E006127D1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B832336A29907D86006127D1 /* AppDelegate.swift */,
+				B832336C29907D86006127D1 /* SceneDelegate.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B832340E299089FF006127D1 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B832340F29908A8D006127D1 /* MainMenuPresenter.swift */,
+				B832341029908A8D006127D1 /* MainMenuRouter.swift */,
+				B832341129908A8D006127D1 /* MainMenuModuleProtocols.swift */,
+				B832341229908A8D006127D1 /* MainMenuViewController.swift */,
+				B832341329908A8D006127D1 /* MainMenuAssembly.swift */,
+				B832341429908A8D006127D1 /* MainMenuInteractor.swift */,
+			);
+			path = MainMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +292,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B832341B29908A8D006127D1 /* MainMenuInteractor.swift in Sources */,
+				B832341829908A8D006127D1 /* MainMenuModuleProtocols.swift in Sources */,
+				B832341629908A8D006127D1 /* MainMenuPresenter.swift in Sources */,
 				B832336F29907D86006127D1 /* ViewController.swift in Sources */,
+				B832341A29908A8D006127D1 /* MainMenuAssembly.swift in Sources */,
 				B832336B29907D86006127D1 /* AppDelegate.swift in Sources */,
+				B832341929908A8D006127D1 /* MainMenuViewController.swift in Sources */,
 				B832336D29907D86006127D1 /* SceneDelegate.swift in Sources */,
+				B832341729908A8D006127D1 /* MainMenuRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
