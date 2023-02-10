@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		0B67E7CB4E7A598BAD083400 /* Pods_PoznanParkingSpace_PoznanParkingSpaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6F52A12C5C6DB59C61039A /* Pods_PoznanParkingSpace_PoznanParkingSpaceUITests.framework */; };
 		2390CA31913E013C41026BDB /* Pods_PoznanParkingSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21CC7E021FB926BE55CB575 /* Pods_PoznanParkingSpace.framework */; };
+		B81539652994265500E439E4 /* ParkingMapModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815395F2994265500E439E4 /* ParkingMapModuleProtocols.swift */; };
+		B81539662994265500E439E4 /* ParkingMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81539602994265500E439E4 /* ParkingMapPresenter.swift */; };
+		B81539672994265500E439E4 /* ParkingMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81539612994265500E439E4 /* ParkingMapRouter.swift */; };
+		B81539682994265500E439E4 /* ParkingMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81539622994265500E439E4 /* ParkingMapViewController.swift */; };
+		B81539692994265500E439E4 /* ParkingMapAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81539632994265500E439E4 /* ParkingMapAssembly.swift */; };
+		B815396A2994265500E439E4 /* ParkingMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81539642994265500E439E4 /* ParkingMapInteractor.swift */; };
+		B815396E2994363200E439E4 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815396D2994363200E439E4 /* MapAnnotation.swift */; };
+		B815397229944D6C00E439E4 /* MapAnnotationCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815397129944D6C00E439E4 /* MapAnnotationCallout.swift */; };
+		B815397A299566B000E439E4 /* MapAnnotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8153979299566B000E439E4 /* MapAnnotationTableViewCell.swift */; };
+		B8153980299576AC00E439E4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815397F299576AC00E439E4 /* Colors.swift */; };
+		B81539852995BB9C00E439E4 /* PoznanStaticLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B81539842995BB9B00E439E4 /* PoznanStaticLocation.gpx */; };
 		B832336D29907D86006127D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832336C29907D86006127D1 /* SceneDelegate.swift */; };
 		B832337429907D87006127D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B832337329907D87006127D1 /* Assets.xcassets */; };
 		B832338229907D87006127D1 /* PoznanParkingSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832338129907D87006127D1 /* PoznanParkingSpaceTests.swift */; };
@@ -24,12 +35,6 @@
 		B83234312991B1FD006127D1 /* ParkingSpaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83234302991B1FD006127D1 /* ParkingSpaceModel.swift */; };
 		B83234352991B64F006127D1 /* ErrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83234342991B64F006127D1 /* ErrorExtensions.swift */; };
 		B83234382991B7C9006127D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83234372991B7C9006127D1 /* AppDelegate.swift */; };
-		B83234412991BE23006127D1 /* ParkingMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832343B2991BE23006127D1 /* ParkingMapPresenter.swift */; };
-		B83234422991BE23006127D1 /* ParkingMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832343C2991BE23006127D1 /* ParkingMapRouter.swift */; };
-		B83234432991BE23006127D1 /* ParkingMapModuleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832343D2991BE23006127D1 /* ParkingMapModuleAPI.swift */; };
-		B83234442991BE23006127D1 /* ParkingMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832343E2991BE23006127D1 /* ParkingMapViewController.swift */; };
-		B83234452991BE23006127D1 /* ParkingMapAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832343F2991BE23006127D1 /* ParkingMapAssembly.swift */; };
-		B83234462991BE23006127D1 /* ParkingMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83234402991BE23006127D1 /* ParkingMapInteractor.swift */; };
 		D2EAFE5B649F0EE4095FAF59 /* Pods_PoznanParkingSpaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1BA5690A65CEA04BB2757E /* Pods_PoznanParkingSpaceTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +62,17 @@
 		565A095ABEACE22D6FA32D43 /* Pods-PoznanParkingSpaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoznanParkingSpaceTests.debug.xcconfig"; path = "Target Support Files/Pods-PoznanParkingSpaceTests/Pods-PoznanParkingSpaceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DED25A52004462EEBEAC70A /* Pods-PoznanParkingSpace-PoznanParkingSpaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoznanParkingSpace-PoznanParkingSpaceUITests.release.xcconfig"; path = "Target Support Files/Pods-PoznanParkingSpace-PoznanParkingSpaceUITests/Pods-PoznanParkingSpace-PoznanParkingSpaceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AB333D153E072FB498406F89 /* Pods-PoznanParkingSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoznanParkingSpace.release.xcconfig"; path = "Target Support Files/Pods-PoznanParkingSpace/Pods-PoznanParkingSpace.release.xcconfig"; sourceTree = "<group>"; };
+		B815395F2994265500E439E4 /* ParkingMapModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapModuleProtocols.swift; sourceTree = "<group>"; };
+		B81539602994265500E439E4 /* ParkingMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapPresenter.swift; sourceTree = "<group>"; };
+		B81539612994265500E439E4 /* ParkingMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapRouter.swift; sourceTree = "<group>"; };
+		B81539622994265500E439E4 /* ParkingMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapViewController.swift; sourceTree = "<group>"; };
+		B81539632994265500E439E4 /* ParkingMapAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapAssembly.swift; sourceTree = "<group>"; };
+		B81539642994265500E439E4 /* ParkingMapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapInteractor.swift; sourceTree = "<group>"; };
+		B815396D2994363200E439E4 /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		B815397129944D6C00E439E4 /* MapAnnotationCallout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationCallout.swift; sourceTree = "<group>"; };
+		B8153979299566B000E439E4 /* MapAnnotationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationTableViewCell.swift; sourceTree = "<group>"; };
+		B815397F299576AC00E439E4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B81539842995BB9B00E439E4 /* PoznanStaticLocation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PoznanStaticLocation.gpx; sourceTree = "<group>"; };
 		B832336729907D86006127D1 /* PoznanParkingSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoznanParkingSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B832336C29907D86006127D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B832337329907D87006127D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,12 +92,6 @@
 		B83234302991B1FD006127D1 /* ParkingSpaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpaceModel.swift; sourceTree = "<group>"; };
 		B83234342991B64F006127D1 /* ErrorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtensions.swift; sourceTree = "<group>"; };
 		B83234372991B7C9006127D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B832343B2991BE23006127D1 /* ParkingMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapPresenter.swift; sourceTree = "<group>"; };
-		B832343C2991BE23006127D1 /* ParkingMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapRouter.swift; sourceTree = "<group>"; };
-		B832343D2991BE23006127D1 /* ParkingMapModuleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapModuleAPI.swift; sourceTree = "<group>"; };
-		B832343E2991BE23006127D1 /* ParkingMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapViewController.swift; sourceTree = "<group>"; };
-		B832343F2991BE23006127D1 /* ParkingMapAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapAssembly.swift; sourceTree = "<group>"; };
-		B83234402991BE23006127D1 /* ParkingMapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapInteractor.swift; sourceTree = "<group>"; };
 		CF1E3DFBD872DF04E07A5EAA /* Pods-PoznanParkingSpaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoznanParkingSpaceTests.release.xcconfig"; path = "Target Support Files/Pods-PoznanParkingSpaceTests/Pods-PoznanParkingSpaceTests.release.xcconfig"; sourceTree = "<group>"; };
 		D21CC7E021FB926BE55CB575 /* Pods_PoznanParkingSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoznanParkingSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62CB0947697B0DD898C4F70 /* Pods-PoznanParkingSpace-PoznanParkingSpaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoznanParkingSpace-PoznanParkingSpaceUITests.debug.xcconfig"; path = "Target Support Files/Pods-PoznanParkingSpace-PoznanParkingSpaceUITests/Pods-PoznanParkingSpace-PoznanParkingSpaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +133,95 @@
 				3E1BA5690A65CEA04BB2757E /* Pods_PoznanParkingSpaceTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B815395E2994264700E439E4 /* ParkingMap */ = {
+			isa = PBXGroup;
+			children = (
+				B815395F2994265500E439E4 /* ParkingMapModuleProtocols.swift */,
+				B81539602994265500E439E4 /* ParkingMapPresenter.swift */,
+				B81539612994265500E439E4 /* ParkingMapRouter.swift */,
+				B81539622994265500E439E4 /* ParkingMapViewController.swift */,
+				B81539632994265500E439E4 /* ParkingMapAssembly.swift */,
+				B81539642994265500E439E4 /* ParkingMapInteractor.swift */,
+				B815396C2994361000E439E4 /* SubViews */,
+				B815397C2995747000E439E4 /* Annotations */,
+			);
+			path = ParkingMap;
+			sourceTree = "<group>";
+		};
+		B815396B299434FE00E439E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B83234302991B1FD006127D1 /* ParkingSpaceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B815396C2994361000E439E4 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				B815397D2995748C00E439E4 /* Callout */,
+				B81539782995668B00E439E4 /* Cell */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		B81539782995668B00E439E4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B8153979299566B000E439E4 /* MapAnnotationTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B815397B2995711F00E439E4 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				B81539832995781C00E439E4 /* GPX */,
+				B81539822995780900E439E4 /* GlobalConstans */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		B815397C2995747000E439E4 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				B815396D2994363200E439E4 /* MapAnnotation.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		B815397D2995748C00E439E4 /* Callout */ = {
+			isa = PBXGroup;
+			children = (
+				B815397129944D6C00E439E4 /* MapAnnotationCallout.swift */,
+			);
+			path = Callout;
+			sourceTree = "<group>";
+		};
+		B8153981299577CA00E439E4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B832342E2991B10C006127D1 /* ParkingSpaceApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B81539822995780900E439E4 /* GlobalConstans */ = {
+			isa = PBXGroup;
+			children = (
+				B815397F299576AC00E439E4 /* Colors.swift */,
+			);
+			path = GlobalConstans;
+			sourceTree = "<group>";
+		};
+		B81539832995781C00E439E4 /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				B81539842995BB9B00E439E4 /* PoznanStaticLocation.gpx */,
+			);
+			path = GPX;
 			sourceTree = "<group>";
 		};
 		B832335E29907D86006127D1 = {
@@ -208,8 +307,8 @@
 		B832342D2991B0DB006127D1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				B832342E2991B10C006127D1 /* ParkingSpaceApi.swift */,
-				B83234302991B1FD006127D1 /* ParkingSpaceModel.swift */,
+				B8153981299577CA00E439E4 /* API */,
+				B815396B299434FE00E439E4 /* Models */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -233,6 +332,7 @@
 		B83234362991B71E006127D1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B815397B2995711F00E439E4 /* Commons */,
 				B83234392991BDEA006127D1 /* Parking */,
 				B832342D2991B0DB006127D1 /* Services */,
 				B832339B2990828E006127D1 /* App */,
@@ -244,22 +344,9 @@
 		B83234392991BDEA006127D1 /* Parking */ = {
 			isa = PBXGroup;
 			children = (
-				B832343A2991BE0E006127D1 /* ParkingMap */,
+				B815395E2994264700E439E4 /* ParkingMap */,
 			);
 			path = Parking;
-			sourceTree = "<group>";
-		};
-		B832343A2991BE0E006127D1 /* ParkingMap */ = {
-			isa = PBXGroup;
-			children = (
-				B832343B2991BE23006127D1 /* ParkingMapPresenter.swift */,
-				B832343C2991BE23006127D1 /* ParkingMapRouter.swift */,
-				B832343D2991BE23006127D1 /* ParkingMapModuleAPI.swift */,
-				B832343E2991BE23006127D1 /* ParkingMapViewController.swift */,
-				B832343F2991BE23006127D1 /* ParkingMapAssembly.swift */,
-				B83234402991BE23006127D1 /* ParkingMapInteractor.swift */,
-			);
-			path = ParkingMap;
 			sourceTree = "<group>";
 		};
 		D710974B0BF4F1EA52C24F2F /* Pods */ = {
@@ -385,6 +472,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81539852995BB9C00E439E4 /* PoznanStaticLocation.gpx in Resources */,
 				B832337429907D87006127D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,18 +621,22 @@
 				B83234382991B7C9006127D1 /* AppDelegate.swift in Sources */,
 				B832342F2991B10C006127D1 /* ParkingSpaceApi.swift in Sources */,
 				B832341B29908A8D006127D1 /* MainMenuInteractor.swift in Sources */,
+				B81539662994265500E439E4 /* ParkingMapPresenter.swift in Sources */,
 				B832341829908A8D006127D1 /* MainMenuModuleProtocols.swift in Sources */,
-				B83234432991BE23006127D1 /* ParkingMapModuleAPI.swift in Sources */,
 				B83234312991B1FD006127D1 /* ParkingSpaceModel.swift in Sources */,
 				B83234352991B64F006127D1 /* ErrorExtensions.swift in Sources */,
-				B83234422991BE23006127D1 /* ParkingMapRouter.swift in Sources */,
-				B83234412991BE23006127D1 /* ParkingMapPresenter.swift in Sources */,
-				B83234462991BE23006127D1 /* ParkingMapInteractor.swift in Sources */,
 				B832341629908A8D006127D1 /* MainMenuPresenter.swift in Sources */,
+				B81539672994265500E439E4 /* ParkingMapRouter.swift in Sources */,
+				B815397229944D6C00E439E4 /* MapAnnotationCallout.swift in Sources */,
+				B815396E2994363200E439E4 /* MapAnnotation.swift in Sources */,
+				B815396A2994265500E439E4 /* ParkingMapInteractor.swift in Sources */,
+				B8153980299576AC00E439E4 /* Colors.swift in Sources */,
+				B81539652994265500E439E4 /* ParkingMapModuleProtocols.swift in Sources */,
 				B832341A29908A8D006127D1 /* MainMenuAssembly.swift in Sources */,
-				B83234442991BE23006127D1 /* ParkingMapViewController.swift in Sources */,
+				B815397A299566B000E439E4 /* MapAnnotationTableViewCell.swift in Sources */,
+				B81539682994265500E439E4 /* ParkingMapViewController.swift in Sources */,
 				B832341929908A8D006127D1 /* MainMenuViewController.swift in Sources */,
-				B83234452991BE23006127D1 /* ParkingMapAssembly.swift in Sources */,
+				B81539692994265500E439E4 /* ParkingMapAssembly.swift in Sources */,
 				B832336D29907D86006127D1 /* SceneDelegate.swift in Sources */,
 				B832341729908A8D006127D1 /* MainMenuRouter.swift in Sources */,
 			);
@@ -712,6 +804,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -740,6 +833,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

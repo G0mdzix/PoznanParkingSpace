@@ -42,7 +42,7 @@ class MainMenuViewController: UIViewController {
   }
 
   @objc private func buttonTapped() {
-    print("TAPED")
+    presenter?.onParkingMapSelected()
   }
 }
 

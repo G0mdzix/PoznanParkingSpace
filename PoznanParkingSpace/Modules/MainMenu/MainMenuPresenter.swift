@@ -1,8 +1,9 @@
 import UIKit
 
-class MainMenuPresenter: MainMenuPresenterProtocol {
-  private var interactor: MainMenuInteractorProtocol
-  private var router: MainMenuRouterProtocol
+class MainMenuPresenter {
+
+  private let interactor: MainMenuInteractorProtocol
+  private let router: MainMenuRouterProtocol
   weak var view: MainMenuViewProtocol?
 
   init(
@@ -13,5 +14,11 @@ class MainMenuPresenter: MainMenuPresenterProtocol {
     self.interactor = interactor
     self.router = router
     self.view = view
+  }
+}
+
+extension MainMenuPresenter: MainMenuPresenterProtocol {
+  func onParkingMapSelected() {
+    router.openParkingMap()
   }
 }

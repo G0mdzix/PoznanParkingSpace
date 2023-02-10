@@ -1,12 +1,12 @@
 import Foundation
 
-class ParkingSpaceApi {
+class ParkingSpaceApi: ParkingSpaceApiProtocol {
   func getApiData(_ completion: @escaping (ResultType<ParkingSpaceList>) -> Void) {
     guard let sourceURL = K.apiUrl else { return }
     let baseUrlRequest = URLRequest(url: sourceURL)
     let session = URLSession.shared
     session.dataTask(with: baseUrlRequest) { data, _, error in
-      guard error == nil else {
+      guard error == nil else { 
         guard let error = error else { return }
         completion(ResultType.failure(error: error))
         return
@@ -44,4 +44,8 @@ private enum K {
 enum ResultType<T> {
   case success(T)
   case failure(error: Error)
+}
+
+protocol ParkingSpaceApiProtocol: AnyObject {
+  func getApiData(_ completion: @escaping (ResultType<ParkingSpaceList>) -> Void)
 }
