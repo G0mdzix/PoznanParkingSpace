@@ -7,12 +7,7 @@ class MapAnnotationCallout: UIView {
   // MARK: - Properties
 
   private let annotation: MapAnnotation
-
-  private lazy var tableView: UITableView = {
-    let table = UITableView()
-    table.isHidden = false
-    return table
-  }()
+  private let tableView = UIFactory.makeTableView()
 
   // MARK: - Lifecycle
 
@@ -81,21 +76,27 @@ extension MapAnnotationCallout: UITableViewDataSource {
     case 0:
       cell.titleLabel.text = Constants.TableView.streetLabel
       cell.descriptionLabel.text = annotation.street
+      cell.titleLabel.font = Fonts.defaultBold
     case 1:
       cell.titleLabel.text = Constants.TableView.zoneLabel
       cell.descriptionLabel.text = annotation.zone
+      cell.titleLabel.font = Fonts.defaultBold
     case 2:
       cell.titleLabel.text = Constants.TableView.cardLabel
       cell.descriptionLabel.text = annotation.card
+      cell.titleLabel.font = Fonts.defaultBold
     case 3:
       cell.titleLabel.text = Constants.TableView.pekaLabel
       cell.descriptionLabel.text = annotation.peka
+      cell.titleLabel.font = Fonts.defaultBold
     case 4:
       cell.titleLabel.text = Constants.TableView.blikLabel
       cell.descriptionLabel.text = annotation.blik
+      cell.titleLabel.font = Fonts.defaultBold
     case 5:
       cell.titleLabel.text = Constants.TableView.bilonLabel
       cell.descriptionLabel.text = annotation.bilon
+      cell.titleLabel.font = Fonts.defaultBold
     default:
       break
     }
@@ -111,7 +112,6 @@ private enum Constants {
 
   enum TableView {
     static let identifier = "CalloutTableView"
-    
     static let streetLabel = "Ulica: "
     static let zoneLabel = "Strefa: "
     static let cardLabel = "Płatność karta: "

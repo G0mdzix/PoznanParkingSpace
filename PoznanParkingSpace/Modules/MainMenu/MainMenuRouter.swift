@@ -6,6 +6,11 @@ class MainMenuRouter {
 }
 
 extension MainMenuRouter: MainMenuRouterProtocol {
+  func openSettingOptions() {
+    let vc = SettingOptionsAssembly().build()
+    view?.present(vc, animated: true)
+  }
+
   func openParkingMap() {
     let vc = ParkingMapAssembly().build()
     view?.navigationController?.pushViewController(vc, animated: true)

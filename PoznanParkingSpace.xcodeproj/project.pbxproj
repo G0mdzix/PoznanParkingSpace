@@ -18,8 +18,10 @@
 		B815396E2994363200E439E4 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815396D2994363200E439E4 /* MapAnnotation.swift */; };
 		B815397229944D6C00E439E4 /* MapAnnotationCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815397129944D6C00E439E4 /* MapAnnotationCallout.swift */; };
 		B815397A299566B000E439E4 /* MapAnnotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8153979299566B000E439E4 /* MapAnnotationTableViewCell.swift */; };
-		B8153980299576AC00E439E4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815397F299576AC00E439E4 /* Colors.swift */; };
+		B8153980299576AC00E439E4 /* AppThemeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815397F299576AC00E439E4 /* AppThemeConstants.swift */; };
 		B81539852995BB9C00E439E4 /* PoznanStaticLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B81539842995BB9B00E439E4 /* PoznanStaticLocation.gpx */; };
+		B815398829A2E0AE00E439E4 /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815398729A2E0AE00E439E4 /* UIFactory.swift */; };
+		B8159D752A1CED4700EFA18B /* MainMenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8159D742A1CED4700EFA18B /* MainMenuTableView.swift */; };
 		B832336D29907D86006127D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832336C29907D86006127D1 /* SceneDelegate.swift */; };
 		B832337429907D87006127D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B832337329907D87006127D1 /* Assets.xcassets */; };
 		B832338229907D87006127D1 /* PoznanParkingSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832338129907D87006127D1 /* PoznanParkingSpaceTests.swift */; };
@@ -31,10 +33,35 @@
 		B832341929908A8D006127D1 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832341229908A8D006127D1 /* MainMenuViewController.swift */; };
 		B832341A29908A8D006127D1 /* MainMenuAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832341329908A8D006127D1 /* MainMenuAssembly.swift */; };
 		B832341B29908A8D006127D1 /* MainMenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832341429908A8D006127D1 /* MainMenuInteractor.swift */; };
-		B832342F2991B10C006127D1 /* ParkingSpaceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832342E2991B10C006127D1 /* ParkingSpaceApi.swift */; };
+		B832342F2991B10C006127D1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832342E2991B10C006127D1 /* NetworkManager.swift */; };
 		B83234312991B1FD006127D1 /* ParkingSpaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83234302991B1FD006127D1 /* ParkingSpaceModel.swift */; };
 		B83234352991B64F006127D1 /* ErrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83234342991B64F006127D1 /* ErrorExtensions.swift */; };
 		B83234382991B7C9006127D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83234372991B7C9006127D1 /* AppDelegate.swift */; };
+		B8960D712A1BDF07000BC84E /* CarbonSutraVehiclesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8960D702A1BDF07000BC84E /* CarbonSutraVehiclesModel.swift */; };
+		B8A349C62A1EA660008F4DAA /* AppColorMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349C52A1EA660008F4DAA /* AppColorMode.swift */; };
+		B8A349CA2A1ED067008F4DAA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8A349CC2A1ED067008F4DAA /* Localizable.strings */; };
+		B8A349CF2A1ED0FC008F4DAA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8A349D12A1ED0FC008F4DAA /* Localizable.strings */; };
+		B8A349D32A1ED159008F4DAA /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349D22A1ED159008F4DAA /* StringExtensions.swift */; };
+		B8A349DB2A1ED6AC008F4DAA /* SettingOptionsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349D52A1ED6AC008F4DAA /* SettingOptionsModuleProtocols.swift */; };
+		B8A349DC2A1ED6AC008F4DAA /* SettingOptionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349D62A1ED6AC008F4DAA /* SettingOptionsPresenter.swift */; };
+		B8A349DD2A1ED6AC008F4DAA /* SettingOptionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349D72A1ED6AC008F4DAA /* SettingOptionsRouter.swift */; };
+		B8A349DE2A1ED6AC008F4DAA /* SettingOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349D82A1ED6AC008F4DAA /* SettingOptionsViewController.swift */; };
+		B8A349DF2A1ED6AC008F4DAA /* SettingOptionsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349D92A1ED6AC008F4DAA /* SettingOptionsAssembly.swift */; };
+		B8A349E02A1ED6AC008F4DAA /* SettingOptionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349DA2A1ED6AC008F4DAA /* SettingOptionsInteractor.swift */; };
+		B8B5C52C2A1C2D4300BB8DE2 /* NetworkManagerResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B5C52B2A1C2D4300BB8DE2 /* NetworkManagerResultType.swift */; };
+		B8B5C52E2A1C2E2C00BB8DE2 /* NetworkManagerListner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B5C52D2A1C2E2C00BB8DE2 /* NetworkManagerListner.swift */; };
+		B8B5C5302A1C3B1800BB8DE2 /* MainMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B5C52F2A1C3B1800BB8DE2 /* MainMenuNavigationController.swift */; };
+		B8B5C5482A1C3FCE00BB8DE2 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B5C5352A1C3FCD00BB8DE2 /* Montserrat-ExtraBoldItalic.ttf */; };
+		B8B5C5492A1C3FCE00BB8DE2 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B5C5362A1C3FCD00BB8DE2 /* Montserrat-ExtraBold.ttf */; };
+		B8B5C54B2A1C3FCE00BB8DE2 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B5C5382A1C3FCD00BB8DE2 /* Montserrat-Regular.ttf */; };
+		B8B5C54C2A1C3FCE00BB8DE2 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B5C5392A1C3FCD00BB8DE2 /* Montserrat-SemiBoldItalic.ttf */; };
+		B8B5C54F2A1C3FCE00BB8DE2 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B5C53C2A1C3FCD00BB8DE2 /* Montserrat-Bold.ttf */; };
+		B8B5C5502A1C3FCE00BB8DE2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B5C53D2A1C3FCD00BB8DE2 /* Montserrat-Medium.ttf */; };
+		B8B5C5512A1C3FCE00BB8DE2 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B5C53E2A1C3FCD00BB8DE2 /* Montserrat-SemiBold.ttf */; };
+		B8B5C5532A1C3FCE00BB8DE2 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B5C5402A1C3FCE00BB8DE2 /* Montserrat-Black.ttf */; };
+		B8B5C5552A1C3FCE00BB8DE2 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B5C5422A1C3FCE00BB8DE2 /* Montserrat-BlackItalic.ttf */; };
+		B8B5C5562A1C3FCE00BB8DE2 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B5C5432A1C3FCE00BB8DE2 /* Montserrat-BoldItalic.ttf */; };
+		B8B5C5572A1C3FCE00BB8DE2 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B5C5442A1C3FCE00BB8DE2 /* Montserrat-MediumItalic.ttf */; };
 		D2EAFE5B649F0EE4095FAF59 /* Pods_PoznanParkingSpaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1BA5690A65CEA04BB2757E /* Pods_PoznanParkingSpaceTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,8 +98,10 @@
 		B815396D2994363200E439E4 /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 		B815397129944D6C00E439E4 /* MapAnnotationCallout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationCallout.swift; sourceTree = "<group>"; };
 		B8153979299566B000E439E4 /* MapAnnotationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationTableViewCell.swift; sourceTree = "<group>"; };
-		B815397F299576AC00E439E4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B815397F299576AC00E439E4 /* AppThemeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeConstants.swift; sourceTree = "<group>"; };
 		B81539842995BB9B00E439E4 /* PoznanStaticLocation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PoznanStaticLocation.gpx; sourceTree = "<group>"; };
+		B815398729A2E0AE00E439E4 /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
+		B8159D742A1CED4700EFA18B /* MainMenuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuTableView.swift; sourceTree = "<group>"; };
 		B832336729907D86006127D1 /* PoznanParkingSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoznanParkingSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B832336C29907D86006127D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B832337329907D87006127D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,10 +117,35 @@
 		B832341229908A8D006127D1 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		B832341329908A8D006127D1 /* MainMenuAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuAssembly.swift; sourceTree = "<group>"; };
 		B832341429908A8D006127D1 /* MainMenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuInteractor.swift; sourceTree = "<group>"; };
-		B832342E2991B10C006127D1 /* ParkingSpaceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpaceApi.swift; sourceTree = "<group>"; };
+		B832342E2991B10C006127D1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B83234302991B1FD006127D1 /* ParkingSpaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpaceModel.swift; sourceTree = "<group>"; };
 		B83234342991B64F006127D1 /* ErrorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtensions.swift; sourceTree = "<group>"; };
 		B83234372991B7C9006127D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8960D702A1BDF07000BC84E /* CarbonSutraVehiclesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonSutraVehiclesModel.swift; sourceTree = "<group>"; };
+		B8A349C52A1EA660008F4DAA /* AppColorMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorMode.swift; sourceTree = "<group>"; };
+		B8A349CB2A1ED067008F4DAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B8A349D02A1ED0FC008F4DAA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B8A349D22A1ED159008F4DAA /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		B8A349D52A1ED6AC008F4DAA /* SettingOptionsModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionsModuleProtocols.swift; sourceTree = "<group>"; };
+		B8A349D62A1ED6AC008F4DAA /* SettingOptionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionsPresenter.swift; sourceTree = "<group>"; };
+		B8A349D72A1ED6AC008F4DAA /* SettingOptionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionsRouter.swift; sourceTree = "<group>"; };
+		B8A349D82A1ED6AC008F4DAA /* SettingOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionsViewController.swift; sourceTree = "<group>"; };
+		B8A349D92A1ED6AC008F4DAA /* SettingOptionsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionsAssembly.swift; sourceTree = "<group>"; };
+		B8A349DA2A1ED6AC008F4DAA /* SettingOptionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionsInteractor.swift; sourceTree = "<group>"; };
+		B8B5C52B2A1C2D4300BB8DE2 /* NetworkManagerResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerResultType.swift; sourceTree = "<group>"; };
+		B8B5C52D2A1C2E2C00BB8DE2 /* NetworkManagerListner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerListner.swift; sourceTree = "<group>"; };
+		B8B5C52F2A1C3B1800BB8DE2 /* MainMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main\U0010MenuNavigationController.swift"; sourceTree = "<group>"; };
+		B8B5C5352A1C3FCD00BB8DE2 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		B8B5C5362A1C3FCD00BB8DE2 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B8B5C5382A1C3FCD00BB8DE2 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		B8B5C5392A1C3FCD00BB8DE2 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		B8B5C53C2A1C3FCD00BB8DE2 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		B8B5C53D2A1C3FCD00BB8DE2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		B8B5C53E2A1C3FCD00BB8DE2 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		B8B5C5402A1C3FCE00BB8DE2 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		B8B5C5422A1C3FCE00BB8DE2 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B8B5C5432A1C3FCE00BB8DE2 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B8B5C5442A1C3FCE00BB8DE2 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
 		CF1E3DFBD872DF04E07A5EAA /* Pods-PoznanParkingSpaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoznanParkingSpaceTests.release.xcconfig"; path = "Target Support Files/Pods-PoznanParkingSpaceTests/Pods-PoznanParkingSpaceTests.release.xcconfig"; sourceTree = "<group>"; };
 		D21CC7E021FB926BE55CB575 /* Pods_PoznanParkingSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoznanParkingSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62CB0947697B0DD898C4F70 /* Pods-PoznanParkingSpace-PoznanParkingSpaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoznanParkingSpace-PoznanParkingSpaceUITests.debug.xcconfig"; path = "Target Support Files/Pods-PoznanParkingSpace-PoznanParkingSpaceUITests/Pods-PoznanParkingSpace-PoznanParkingSpaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +207,7 @@
 		B815396B299434FE00E439E4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B8960D702A1BDF07000BC84E /* CarbonSutraVehiclesModel.swift */,
 				B83234302991B1FD006127D1 /* ParkingSpaceModel.swift */,
 			);
 			path = Models;
@@ -175,15 +230,6 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		B815397B2995711F00E439E4 /* Commons */ = {
-			isa = PBXGroup;
-			children = (
-				B81539832995781C00E439E4 /* GPX */,
-				B81539822995780900E439E4 /* GlobalConstans */,
-			);
-			path = Commons;
-			sourceTree = "<group>";
-		};
 		B815397C2995747000E439E4 /* Annotations */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,17 +249,18 @@
 		B8153981299577CA00E439E4 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				B832342E2991B10C006127D1 /* ParkingSpaceApi.swift */,
+				B8B5C52A2A1BF7A300BB8DE2 /* Networking */,
 			);
 			path = API;
 			sourceTree = "<group>";
 		};
-		B81539822995780900E439E4 /* GlobalConstans */ = {
+		B81539822995780900E439E4 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
-				B815397F299576AC00E439E4 /* Colors.swift */,
+				B815397F299576AC00E439E4 /* AppThemeConstants.swift */,
+				B8A349C52A1EA660008F4DAA /* AppColorMode.swift */,
 			);
-			path = GlobalConstans;
+			path = Themes;
 			sourceTree = "<group>";
 		};
 		B81539832995781C00E439E4 /* GPX */ = {
@@ -222,6 +269,14 @@
 				B81539842995BB9B00E439E4 /* PoznanStaticLocation.gpx */,
 			);
 			path = GPX;
+			sourceTree = "<group>";
+		};
+		B815398629A2E09700E439E4 /* UIFactory */ = {
+			isa = PBXGroup;
+			children = (
+				B815398729A2E0AE00E439E4 /* UIFactory.swift */,
+			);
+			path = UIFactory;
 			sourceTree = "<group>";
 		};
 		B832335E29907D86006127D1 = {
@@ -249,10 +304,13 @@
 		B832336929907D86006127D1 /* PoznanParkingSpace */ = {
 			isa = PBXGroup;
 			children = (
+				B8960D6C2A1BDCBB000BC84E /* Core */,
+				B83F2C1F29BCDF4000259D49 /* CoreML */,
+				B815398629A2E09700E439E4 /* UIFactory */,
 				B83234362991B71E006127D1 /* Modules */,
 				B832337829907D87006127D1 /* Info.plist */,
 				B83234322991B62B006127D1 /* Extensions */,
-				B832339A29908280006127D1 /* Assets */,
+				B832339A29908280006127D1 /* Resources */,
 			);
 			path = PoznanParkingSpace;
 			sourceTree = "<group>";
@@ -274,12 +332,16 @@
 			path = PoznanParkingSpaceUITests;
 			sourceTree = "<group>";
 		};
-		B832339A29908280006127D1 /* Assets */ = {
+		B832339A29908280006127D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B8A349C72A1ECD12008F4DAA /* Localizable */,
+				B81539822995780900E439E4 /* Themes */,
+				B8B5C5322A1C3F6000BB8DE2 /* Fonts */,
+				B81539832995781C00E439E4 /* GPX */,
 				B832337329907D87006127D1 /* Assets.xcassets */,
 			);
-			path = Assets;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B832339B2990828E006127D1 /* App */ = {
@@ -294,10 +356,10 @@
 		B832340E299089FF006127D1 /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
+				B8B5C5312A1C3B1E00BB8DE2 /* View */,
 				B832340F29908A8D006127D1 /* MainMenuPresenter.swift */,
 				B832341029908A8D006127D1 /* MainMenuRouter.swift */,
 				B832341129908A8D006127D1 /* MainMenuModuleProtocols.swift */,
-				B832341229908A8D006127D1 /* MainMenuViewController.swift */,
 				B832341329908A8D006127D1 /* MainMenuAssembly.swift */,
 				B832341429908A8D006127D1 /* MainMenuInteractor.swift */,
 			);
@@ -316,26 +378,18 @@
 		B83234322991B62B006127D1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B83234332991B635006127D1 /* Error */,
+				B83234342991B64F006127D1 /* ErrorExtensions.swift */,
+				B8A349D22A1ED159008F4DAA /* StringExtensions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		B83234332991B635006127D1 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				B83234342991B64F006127D1 /* ErrorExtensions.swift */,
-			);
-			path = Error;
 			sourceTree = "<group>";
 		};
 		B83234362991B71E006127D1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				B815397B2995711F00E439E4 /* Commons */,
-				B83234392991BDEA006127D1 /* Parking */,
-				B832342D2991B0DB006127D1 /* Services */,
+				B8A349D42A1ED669008F4DAA /* SettingOptions */,
 				B832339B2990828E006127D1 /* App */,
+				B83234392991BDEA006127D1 /* Parking */,
 				B832340E299089FF006127D1 /* MainMenu */,
 			);
 			path = Modules;
@@ -347,6 +401,81 @@
 				B815395E2994264700E439E4 /* ParkingMap */,
 			);
 			path = Parking;
+			sourceTree = "<group>";
+		};
+		B83F2C1F29BCDF4000259D49 /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
+		B8960D6C2A1BDCBB000BC84E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B832342D2991B0DB006127D1 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B8A349C72A1ECD12008F4DAA /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				B8A349CC2A1ED067008F4DAA /* Localizable.strings */,
+				B8A349D12A1ED0FC008F4DAA /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		B8A349D42A1ED669008F4DAA /* SettingOptions */ = {
+			isa = PBXGroup;
+			children = (
+				B8A349D52A1ED6AC008F4DAA /* SettingOptionsModuleProtocols.swift */,
+				B8A349D62A1ED6AC008F4DAA /* SettingOptionsPresenter.swift */,
+				B8A349D72A1ED6AC008F4DAA /* SettingOptionsRouter.swift */,
+				B8A349D82A1ED6AC008F4DAA /* SettingOptionsViewController.swift */,
+				B8A349D92A1ED6AC008F4DAA /* SettingOptionsAssembly.swift */,
+				B8A349DA2A1ED6AC008F4DAA /* SettingOptionsInteractor.swift */,
+			);
+			path = SettingOptions;
+			sourceTree = "<group>";
+		};
+		B8B5C52A2A1BF7A300BB8DE2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B832342E2991B10C006127D1 /* NetworkManager.swift */,
+				B8B5C52D2A1C2E2C00BB8DE2 /* NetworkManagerListner.swift */,
+				B8B5C52B2A1C2D4300BB8DE2 /* NetworkManagerResultType.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B8B5C5312A1C3B1E00BB8DE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8B5C52F2A1C3B1800BB8DE2 /* MainMenuNavigationController.swift */,
+				B832341229908A8D006127D1 /* MainMenuViewController.swift */,
+				B8159D742A1CED4700EFA18B /* MainMenuTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8B5C5322A1C3F6000BB8DE2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B8B5C5402A1C3FCE00BB8DE2 /* Montserrat-Black.ttf */,
+				B8B5C5422A1C3FCE00BB8DE2 /* Montserrat-BlackItalic.ttf */,
+				B8B5C53C2A1C3FCD00BB8DE2 /* Montserrat-Bold.ttf */,
+				B8B5C5432A1C3FCE00BB8DE2 /* Montserrat-BoldItalic.ttf */,
+				B8B5C5362A1C3FCD00BB8DE2 /* Montserrat-ExtraBold.ttf */,
+				B8B5C5352A1C3FCD00BB8DE2 /* Montserrat-ExtraBoldItalic.ttf */,
+				B8B5C53D2A1C3FCD00BB8DE2 /* Montserrat-Medium.ttf */,
+				B8B5C5442A1C3FCE00BB8DE2 /* Montserrat-MediumItalic.ttf */,
+				B8B5C5382A1C3FCD00BB8DE2 /* Montserrat-Regular.ttf */,
+				B8B5C53E2A1C3FCD00BB8DE2 /* Montserrat-SemiBold.ttf */,
+				B8B5C5392A1C3FCD00BB8DE2 /* Montserrat-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		D710974B0BF4F1EA52C24F2F /* Pods */ = {
@@ -454,6 +583,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = B832335E29907D86006127D1;
 			productRefGroup = B832336829907D86006127D1 /* Products */;
@@ -472,7 +602,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B5C54C2A1C3FCE00BB8DE2 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				B8B5C54B2A1C3FCE00BB8DE2 /* Montserrat-Regular.ttf in Resources */,
 				B81539852995BB9C00E439E4 /* PoznanStaticLocation.gpx in Resources */,
+				B8A349CA2A1ED067008F4DAA /* Localizable.strings in Resources */,
+				B8B5C5492A1C3FCE00BB8DE2 /* Montserrat-ExtraBold.ttf in Resources */,
+				B8B5C5552A1C3FCE00BB8DE2 /* Montserrat-BlackItalic.ttf in Resources */,
+				B8B5C5572A1C3FCE00BB8DE2 /* Montserrat-MediumItalic.ttf in Resources */,
+				B8B5C5532A1C3FCE00BB8DE2 /* Montserrat-Black.ttf in Resources */,
+				B8B5C54F2A1C3FCE00BB8DE2 /* Montserrat-Bold.ttf in Resources */,
+				B8B5C5562A1C3FCE00BB8DE2 /* Montserrat-BoldItalic.ttf in Resources */,
+				B8A349CF2A1ED0FC008F4DAA /* Localizable.strings in Resources */,
+				B8B5C5482A1C3FCE00BB8DE2 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				B8B5C5512A1C3FCE00BB8DE2 /* Montserrat-SemiBold.ttf in Resources */,
+				B8B5C5502A1C3FCE00BB8DE2 /* Montserrat-Medium.ttf in Resources */,
 				B832337429907D87006127D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,24 +762,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				B83234382991B7C9006127D1 /* AppDelegate.swift in Sources */,
-				B832342F2991B10C006127D1 /* ParkingSpaceApi.swift in Sources */,
+				B832342F2991B10C006127D1 /* NetworkManager.swift in Sources */,
 				B832341B29908A8D006127D1 /* MainMenuInteractor.swift in Sources */,
 				B81539662994265500E439E4 /* ParkingMapPresenter.swift in Sources */,
+				B8B5C5302A1C3B1800BB8DE2 /* MainMenuNavigationController.swift in Sources */,
+				B815398829A2E0AE00E439E4 /* UIFactory.swift in Sources */,
 				B832341829908A8D006127D1 /* MainMenuModuleProtocols.swift in Sources */,
 				B83234312991B1FD006127D1 /* ParkingSpaceModel.swift in Sources */,
 				B83234352991B64F006127D1 /* ErrorExtensions.swift in Sources */,
+				B8A349E02A1ED6AC008F4DAA /* SettingOptionsInteractor.swift in Sources */,
 				B832341629908A8D006127D1 /* MainMenuPresenter.swift in Sources */,
+				B8A349DD2A1ED6AC008F4DAA /* SettingOptionsRouter.swift in Sources */,
+				B8159D752A1CED4700EFA18B /* MainMenuTableView.swift in Sources */,
+				B8A349D32A1ED159008F4DAA /* StringExtensions.swift in Sources */,
 				B81539672994265500E439E4 /* ParkingMapRouter.swift in Sources */,
+				B8B5C52C2A1C2D4300BB8DE2 /* NetworkManagerResultType.swift in Sources */,
+				B8A349DB2A1ED6AC008F4DAA /* SettingOptionsModuleProtocols.swift in Sources */,
+				B8A349DF2A1ED6AC008F4DAA /* SettingOptionsAssembly.swift in Sources */,
 				B815397229944D6C00E439E4 /* MapAnnotationCallout.swift in Sources */,
 				B815396E2994363200E439E4 /* MapAnnotation.swift in Sources */,
+				B8960D712A1BDF07000BC84E /* CarbonSutraVehiclesModel.swift in Sources */,
+				B8A349DE2A1ED6AC008F4DAA /* SettingOptionsViewController.swift in Sources */,
 				B815396A2994265500E439E4 /* ParkingMapInteractor.swift in Sources */,
-				B8153980299576AC00E439E4 /* Colors.swift in Sources */,
+				B8A349C62A1EA660008F4DAA /* AppColorMode.swift in Sources */,
+				B8153980299576AC00E439E4 /* AppThemeConstants.swift in Sources */,
 				B81539652994265500E439E4 /* ParkingMapModuleProtocols.swift in Sources */,
 				B832341A29908A8D006127D1 /* MainMenuAssembly.swift in Sources */,
 				B815397A299566B000E439E4 /* MapAnnotationTableViewCell.swift in Sources */,
 				B81539682994265500E439E4 /* ParkingMapViewController.swift in Sources */,
+				B8A349DC2A1ED6AC008F4DAA /* SettingOptionsPresenter.swift in Sources */,
 				B832341929908A8D006127D1 /* MainMenuViewController.swift in Sources */,
 				B81539692994265500E439E4 /* ParkingMapAssembly.swift in Sources */,
+				B8B5C52E2A1C2E2C00BB8DE2 /* NetworkManagerListner.swift in Sources */,
 				B832336D29907D86006127D1 /* SceneDelegate.swift in Sources */,
 				B832341729908A8D006127D1 /* MainMenuRouter.swift in Sources */,
 			);
@@ -673,6 +830,25 @@
 			targetProxy = B832338829907D87006127D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B8A349CC2A1ED067008F4DAA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8A349CB2A1ED067008F4DAA /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B8A349D12A1ED0FC008F4DAA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8A349D02A1ED0FC008F4DAA /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B832338F29907D87006127D1 /* Debug */ = {
@@ -725,7 +901,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -779,7 +955,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -797,6 +973,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9XS6X5TT86;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PoznanParkingSpace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -804,7 +981,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -826,6 +1003,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9XS6X5TT86;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PoznanParkingSpace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -833,7 +1011,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -856,7 +1034,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = G0mdzix.PoznanParkingSpaceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -876,7 +1054,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = G0mdzix.PoznanParkingSpaceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

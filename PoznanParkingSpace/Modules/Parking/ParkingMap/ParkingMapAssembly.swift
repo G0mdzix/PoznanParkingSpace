@@ -6,11 +6,11 @@ class ParkingMapAssembly {
     let interactor = ParkingMapInteractor()
     let router = ParkingMapRouter()
     let presenter = ParkingMapPresenter(view: view, interactor: interactor, router: router)
-    let parkingSpaceAPI: ParkingSpaceApiProtocol = ParkingSpaceApi()
+    let netwrokManager: NetworkManagerListner = NetworkManager()
 
     view.presenter = presenter
     interactor.presenter = presenter
-    interactor.parkingSpaceAPI = parkingSpaceAPI
+    interactor.networkManager = netwrokManager
     router.view = view
 
     return view

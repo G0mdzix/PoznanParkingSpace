@@ -1,5 +1,6 @@
 import UIKit
 import MapKit
+import Photos
 import SnapKit
 
 class ParkingMapViewController: UIViewController {
@@ -8,12 +9,9 @@ class ParkingMapViewController: UIViewController {
 
   var presenter: ParkingMapPresenterProtocol?
 
-  private lazy var mapView: MKMapView = {
-    let mapView = MKMapView()
-    mapView.showsUserLocation = true
-    mapView.translatesAutoresizingMaskIntoConstraints = false
-    return mapView
-  }()
+  // MARK: - Properties (Private)
+
+  private let mapView = UIFactory.makeMapView()
 
   // MARK: - Lifecycle
 
@@ -73,6 +71,7 @@ extension ParkingMapViewController: MKMapViewDelegate {
       view.canShowCallout = true
       Task { 
         view.detailCalloutAccessoryView = self.makeAnnotationCallout(annotation: annotation)
+        view.image = UIImage(named: "fire")
       }
     }
   }
@@ -128,6 +127,7 @@ private enum Constants {
     static let width = CGFloat(400)
     static let height = CGFloat(300)
   }
+
   //Dummy data provided to do some tests
   enum DataToTest {
     static let poznanCoordinates = CLLocationCoordinate2D(

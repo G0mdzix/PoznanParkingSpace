@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 import MapKit
 
 class ParkingMapInteractor {
@@ -6,7 +7,7 @@ class ParkingMapInteractor {
   // MARK: - Properties
 
   weak var presenter: ParkingMapPresenterProtocol?
-  var parkingSpaceAPI: ParkingSpaceApiProtocol?
+  var networkManager: NetworkManagerListner?
 
   // MARK: - PrivateFunctions 
 
@@ -36,13 +37,26 @@ class ParkingMapInteractor {
 
 extension ParkingMapInteractor: ParkingMapInteractorProtocol {
   func fetchDataFromParkingSpaceAPI() {
-    guard let API = parkingSpaceAPI else { return }
-    API.getApiData { results in
-      switch results {
+    guard let networkManager = networkManager else { return }
+    networkManager.fetchParkingSpaceInIntervals { resultType in
+      switch resultType {
+      case .success(let parkingSpaceList):
+        print("TEST INTERVALU: ", parkingSpaceList.features.count)
+        self.convertAPIDataToMapAnnotation(parkingSpaceList: parkingSpaceList.features)
+      case .failure:
+        break // in feature
+      }
+    }
+  }
+
+  private func testujemy() {
+    guard let networkManager = networkManager else { return }
+    networkManager.fetchCarbonSutra { resultType in
+      switch resultType {
       case .success(let value):
-        self.convertAPIDataToMapAnnotation(parkingSpaceList: value.features)
-      case .failure(let error):
-        print(error.localizedDescription) // TODO
+        print("SPRAWDZAM BMW: ", value.data)
+      case .failure:
+        break // in feature
       }
     }
   }
