@@ -1,0 +1,6 @@
+framework module Pods_PoznanParkingSpace {
+  umbrella header "Pods-PoznanParkingSpace-umbrella.h"
+
+  export *
+  module * { export * }
+}

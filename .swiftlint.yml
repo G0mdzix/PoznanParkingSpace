@@ -1,0 +1,179 @@
+# source and more rules: https://realm.github.io/SwiftLint/rule-directory.html
+
+excluded:
+  - Classes/Resources/
+  - Classes/Core/Sourcery
+  - doc
+  - Pods
+  - Developer
+disabled_rules:
+  # When registering for a notification using a block, the opaque observer that is returned
+  # should be stored so it can be removed later
+  - discarded_notification_center_observer
+  # An object should only remove itself as an observer in deinit
+  - notification_center_detachment
+  # A doc comment should be attached to a declaration
+  - orphaned_doc_comment
+  # TODOs and FIXMEs should be resolved
+  - todo
+  # Unused reference in a capture list should be removed
+  - unused_capture_list
+  # Prefer initializers over object literals
+  - discouraged_object_literal
+  # Closure parameters should be on the same line as opening brace.
+  - closure_parameter_position
+opt_in_rules:
+  # Prefer using Array(seq) over seq.map { $0 } to convert a sequence into an Array
+  - array_init
+  # Attributes should be on their own lines in functions and types, but on the same line as
+  # variables and imports
+  - attributes
+  # Closure end should have the same indentation as the line that started it
+  - closure_end_indentation
+  # Closure expressions should have a single space inside each brace
+  - closure_spacing
+  # All elements in a collection literal should be vertically aligned
+  - collection_alignment
+  # Colons should be next to the identifier when specifying a type and next to the key in
+  # dictionary literals
+  - colon
+  # Types used for hosting only static members should be implemented as a caseless enum to
+  # avoid instantiation
+  - convenience_type
+  # Prefer checking isEmpty over comparing collection to an empty array or dictionary literal
+  - empty_collection_literal
+  # Prefer checking isEmpty over comparing count to zero
+  - empty_count
+  # Prefer checking isEmpty over comparing string to an empty string literal
+  - empty_string
+  # Number of associated values in an enum case should be low.
+  # Default configuration: warning: 5, error: 6
+  - enum_case_associated_values_count
+  # A fatalError call should have a message
+  - fatal_error_message
+  # Prefer using .first(where:) over .filter { }.first in collections
+  - first_where
+  # Force unwrapping should be avoided
+  - force_unwrapping
+  # Implicitly unwrapped optionals should be avoided when possible
+  - implicitly_unwrapped_optional
+  # Prefer using .last(where:) over .filter { }.last in collections
+  - last_where
+  # Prefer using type.random(in:) over legacy functions
+  - legacy_random
+  # Array and dictionary literal end should have the same indentation as the line that started it
+  - literal_expression_end_indentation
+  # Chained function calls should be either on the same line, or one per line
+  - multiline_function_chains
+  # Multiline literals should have their surrounding brackets in a new line
+  - multiline_literal_brackets
+  # Functions and methods parameters should be either on the same line, or one per line
+  - multiline_parameters
+  # Multiline parameters should have their surrounding brackets in a new line
+  - multiline_parameters_brackets
+  # Operators should be surrounded by a single whitespace when they are being used
+  - operator_usage_whitespace
+  # Some overridden methods should always call super
+  - overridden_super_call
+  # Combine multiple pattern matching bindings by moving keywords out of tuples
+  - pattern_matching_keywords
+  # Prefer Self over type(of: self) when accessing properties or calling methods
+  - prefer_self_type_over_type_of_self
+  # nil coalescing operator is only evaluated if the lhs is nil, coalescing operator with nil as
+  # rhs is redundant
+  - redundant_nil_coalescing
+  # Variables should not have redundant type annotation
+  - redundant_type_annotation
+  # fileprivate should be avoided
+  - strict_fileprivate
+  # Prefer someBool.toggle() over someBool = !someBool
+  - toggle_bool
+  # Parentheses are not needed when declaring closure arguments
+  - unneeded_parentheses_in_closure_argument
+  # All imported modules should be required to make the file compile
+  - unused_import
+  # Don’t include vertical whitespace (empty line) before closing braces
+  - vertical_whitespace_closing_braces
+  # The variable should be placed on the left, the constant on the right of a comparison operator
+  - yoda_condition
+  #Indent code using either one tab or the configured amount of spaces, unindent to match previous indentations. Don’t indent the first line.
+  - indentation_width
+
+# Type name should only contain alphanumeric characters, start with an uppercase character
+# and span between 1 and 39 characters in length
+type_name:
+  min_length:
+    warning: 0
+    error: 0
+  max_length:
+    warning: 40
+    error: 40
+
+# Lines should not span too many characters
+line_length:
+  warning: 100
+  error: 100
+
+# Files should not span too many lines
+file_length:
+  warning: 450
+  error: 450
+
+# Type bodies should not span too many lines
+type_body_length:
+  warning: 350
+  error: 350
+
+# Functions bodies should not span too many lines
+function_body_length:
+  warning: 60
+  error: 60
+
+# Number of function parameters should be low
+function_parameter_count:
+  warning: 4
+  error: 4
+
+# Types and functions should be nested at most 2 level deep
+nesting:
+  type_level:
+    warning: 2
+    error: 2
+  function_level:
+    warning: 2
+    error: 2
+
+# Force casts should be avoided
+force_cast: error
+
+# Force tries should be avoided
+force_try: error
+
+# Prefer using the hash(into:) function instead of overriding hashValue
+legacy_hashing: error
+
+# Prefer private over fileprivate declarations
+private_over_fileprivate:
+  validate_extensions: true
+
+# Lines should not have trailing whitespace
+trailing_whitespace:
+  ignores_empty_lines: false
+  ignores_comments: true
+
+# Limit vertical whitespace to a single empty line
+vertical_whitespace:
+  max_empty_lines: 1
+
+# Identifier names should only contain alphanumeric characters and start with a lowercase character
+# or should only contain capital letters. In an exception to the above, variable names may start
+# with a capital letter when they are declared static and immutable. Variable names should not be
+# too long or too short.
+identifier_name:
+  min_length: 1
+
+# Indent code using either one tab or the configured amount of spaces, unindent to match previous
+# indentations. Don’t indent the first line
+indentation_width:
+  indentation_width: 2
+

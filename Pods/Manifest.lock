@@ -1,0 +1,21 @@
+PODS:
+  - SnapKit (5.0.1)
+  - SwiftSpinner (2.2.0)
+
+DEPENDENCIES:
+  - SnapKit
+  - SnapKit (~> 5.0.0)
+  - SwiftSpinner
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - SwiftSpinner
+
+SPEC CHECKSUMS:
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftSpinner: f9b59477fe107427f2b5b835497d6636fa167ede
+
+PODFILE CHECKSUM: cb440f9d569ebd531ad7654cb5ba2ea863cfdb94
+
+COCOAPODS: 1.12.1
