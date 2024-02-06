@@ -48,6 +48,21 @@
 		B8A349DE2A1ED6AC008F4DAA /* SettingOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349D82A1ED6AC008F4DAA /* SettingOptionsViewController.swift */; };
 		B8A349DF2A1ED6AC008F4DAA /* SettingOptionsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349D92A1ED6AC008F4DAA /* SettingOptionsAssembly.swift */; };
 		B8A349E02A1ED6AC008F4DAA /* SettingOptionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349DA2A1ED6AC008F4DAA /* SettingOptionsInteractor.swift */; };
+		B8A349E82A27E073008F4DAA /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349E52A27E073008F4DAA /* UIImage+CVPixelBuffer.swift */; };
+		B8A349E92A27E073008F4DAA /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349E62A27E073008F4DAA /* VideoCapture.swift */; };
+		B8A349EA2A27E073008F4DAA /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349E72A27E073008F4DAA /* Measure.swift */; };
+		B8A349EC2A27E089008F4DAA /* DrawingBoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349EB2A27E089008F4DAA /* DrawingBoundingBoxView.swift */; };
+		B8A349EE2A27E096008F4DAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A349ED2A27E096008F4DAA /* ViewController.swift */; };
+		B8A349F02A27E0E6008F4DAA /* PoznanParkingSpaceMLModel-ObjectDetectionML.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B8A349EF2A27E0E6008F4DAA /* PoznanParkingSpaceMLModel-ObjectDetectionML.mlmodel */; };
+		B8B4B2252A2D543E00982080 /* UserLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B2242A2D543E00982080 /* UserLocationService.swift */; };
+		B8B4B2342A2D656700982080 /* ParkingMapAutoRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B2332A2D656700982080 /* ParkingMapAutoRouting.swift */; };
+		B8B4B23C2A2E762900982080 /* Rynek->Berdychowo.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B23B2A2E762900982080 /* Rynek->Berdychowo.gpx */; };
+		B8B4B2402A2E796C00982080 /* nadRynkiem->Berdychow0.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B23F2A2E796C00982080 /* nadRynkiem->Berdychow0.gpx */; };
+		B8B4B2422A2E7AA100982080 /* Chartowo->Berdychowo.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B2412A2E7AA100982080 /* Chartowo->Berdychowo.gpx */; };
+		B8B4B2462A2EA64000982080 /* Malta->NaMiasteczku.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B2452A2EA64000982080 /* Malta->NaMiasteczku.gpx */; };
+		B8B4B2482A3011AB00982080 /* Srodka.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B8B4B2472A3011AB00982080 /* Srodka.gpx */; };
+		B8B4B24A2A30FC7800982080 /* CarbonSutraVehiclesEstimateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B2492A30FC7800982080 /* CarbonSutraVehiclesEstimateModel.swift */; };
+		B8B4B24C2A311B7D00982080 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4B24B2A311B7D00982080 /* DoubleExtensions.swift */; };
 		B8B5C52C2A1C2D4300BB8DE2 /* NetworkManagerResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B5C52B2A1C2D4300BB8DE2 /* NetworkManagerResultType.swift */; };
 		B8B5C52E2A1C2E2C00BB8DE2 /* NetworkManagerListner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B5C52D2A1C2E2C00BB8DE2 /* NetworkManagerListner.swift */; };
 		B8B5C5302A1C3B1800BB8DE2 /* MainMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B5C52F2A1C3B1800BB8DE2 /* MainMenuNavigationController.swift */; };
@@ -132,6 +147,21 @@
 		B8A349D82A1ED6AC008F4DAA /* SettingOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionsViewController.swift; sourceTree = "<group>"; };
 		B8A349D92A1ED6AC008F4DAA /* SettingOptionsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionsAssembly.swift; sourceTree = "<group>"; };
 		B8A349DA2A1ED6AC008F4DAA /* SettingOptionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionsInteractor.swift; sourceTree = "<group>"; };
+		B8A349E52A27E073008F4DAA /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		B8A349E62A27E073008F4DAA /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		B8A349E72A27E073008F4DAA /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		B8A349EB2A27E089008F4DAA /* DrawingBoundingBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingBoundingBoxView.swift; sourceTree = "<group>"; };
+		B8A349ED2A27E096008F4DAA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8A349EF2A27E0E6008F4DAA /* PoznanParkingSpaceMLModel-ObjectDetectionML.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "PoznanParkingSpaceMLModel-ObjectDetectionML.mlmodel"; sourceTree = "<group>"; };
+		B8B4B2242A2D543E00982080 /* UserLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationService.swift; sourceTree = "<group>"; };
+		B8B4B2332A2D656700982080 /* ParkingMapAutoRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapAutoRouting.swift; sourceTree = "<group>"; };
+		B8B4B23B2A2E762900982080 /* Rynek->Berdychowo.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Rynek->Berdychowo.gpx"; sourceTree = "<group>"; };
+		B8B4B23F2A2E796C00982080 /* nadRynkiem->Berdychow0.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "nadRynkiem->Berdychow0.gpx"; sourceTree = "<group>"; };
+		B8B4B2412A2E7AA100982080 /* Chartowo->Berdychowo.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Chartowo->Berdychowo.gpx"; sourceTree = "<group>"; };
+		B8B4B2452A2EA64000982080 /* Malta->NaMiasteczku.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Malta->NaMiasteczku.gpx"; sourceTree = "<group>"; };
+		B8B4B2472A3011AB00982080 /* Srodka.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Srodka.gpx; sourceTree = "<group>"; };
+		B8B4B2492A30FC7800982080 /* CarbonSutraVehiclesEstimateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonSutraVehiclesEstimateModel.swift; sourceTree = "<group>"; };
+		B8B4B24B2A311B7D00982080 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		B8B5C52B2A1C2D4300BB8DE2 /* NetworkManagerResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerResultType.swift; sourceTree = "<group>"; };
 		B8B5C52D2A1C2E2C00BB8DE2 /* NetworkManagerListner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerListner.swift; sourceTree = "<group>"; };
 		B8B5C52F2A1C3B1800BB8DE2 /* MainMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main\U0010MenuNavigationController.swift"; sourceTree = "<group>"; };
@@ -200,6 +230,7 @@
 				B81539642994265500E439E4 /* ParkingMapInteractor.swift */,
 				B815396C2994361000E439E4 /* SubViews */,
 				B815397C2995747000E439E4 /* Annotations */,
+				B8B4B2332A2D656700982080 /* ParkingMapAutoRouting.swift */,
 			);
 			path = ParkingMap;
 			sourceTree = "<group>";
@@ -209,6 +240,7 @@
 			children = (
 				B8960D702A1BDF07000BC84E /* CarbonSutraVehiclesModel.swift */,
 				B83234302991B1FD006127D1 /* ParkingSpaceModel.swift */,
+				B8B4B2492A30FC7800982080 /* CarbonSutraVehiclesEstimateModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,6 +281,7 @@
 		B8153981299577CA00E439E4 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B815396B299434FE00E439E4 /* Models */,
 				B8B5C52A2A1BF7A300BB8DE2 /* Networking */,
 			);
 			path = API;
@@ -266,6 +299,11 @@
 		B81539832995781C00E439E4 /* GPX */ = {
 			isa = PBXGroup;
 			children = (
+				B8B4B2472A3011AB00982080 /* Srodka.gpx */,
+				B8B4B2452A2EA64000982080 /* Malta->NaMiasteczku.gpx */,
+				B8B4B2412A2E7AA100982080 /* Chartowo->Berdychowo.gpx */,
+				B8B4B23F2A2E796C00982080 /* nadRynkiem->Berdychow0.gpx */,
+				B8B4B23B2A2E762900982080 /* Rynek->Berdychowo.gpx */,
 				B81539842995BB9B00E439E4 /* PoznanStaticLocation.gpx */,
 			);
 			path = GPX;
@@ -369,8 +407,8 @@
 		B832342D2991B0DB006127D1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B8B4B2232A2D541300982080 /* UserLocationService */,
 				B8153981299577CA00E439E4 /* API */,
-				B815396B299434FE00E439E4 /* Models */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -380,6 +418,7 @@
 			children = (
 				B83234342991B64F006127D1 /* ErrorExtensions.swift */,
 				B8A349D22A1ED159008F4DAA /* StringExtensions.swift */,
+				B8B4B24B2A311B7D00982080 /* DoubleExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +426,7 @@
 		B83234362991B71E006127D1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B8A349E32A27E047008F4DAA /* Detection */,
 				B8A349D42A1ED669008F4DAA /* SettingOptions */,
 				B832339B2990828E006127D1 /* App */,
 				B83234392991BDEA006127D1 /* Parking */,
@@ -406,6 +446,7 @@
 		B83F2C1F29BCDF4000259D49 /* CoreML */ = {
 			isa = PBXGroup;
 			children = (
+				B8A349EF2A27E0E6008F4DAA /* PoznanParkingSpaceMLModel-ObjectDetectionML.mlmodel */,
 			);
 			path = CoreML;
 			sourceTree = "<group>";
@@ -438,6 +479,34 @@
 				B8A349DA2A1ED6AC008F4DAA /* SettingOptionsInteractor.swift */,
 			);
 			path = SettingOptions;
+			sourceTree = "<group>";
+		};
+		B8A349E32A27E047008F4DAA /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				B8A349ED2A27E096008F4DAA /* ViewController.swift */,
+				B8A349EB2A27E089008F4DAA /* DrawingBoundingBoxView.swift */,
+				B8A349E42A27E073008F4DAA /* ultils */,
+			);
+			path = Detection;
+			sourceTree = "<group>";
+		};
+		B8A349E42A27E073008F4DAA /* ultils */ = {
+			isa = PBXGroup;
+			children = (
+				B8A349E52A27E073008F4DAA /* UIImage+CVPixelBuffer.swift */,
+				B8A349E62A27E073008F4DAA /* VideoCapture.swift */,
+				B8A349E72A27E073008F4DAA /* Measure.swift */,
+			);
+			path = ultils;
+			sourceTree = "<group>";
+		};
+		B8B4B2232A2D541300982080 /* UserLocationService */ = {
+			isa = PBXGroup;
+			children = (
+				B8B4B2242A2D543E00982080 /* UserLocationService.swift */,
+			);
+			path = UserLocationService;
 			sourceTree = "<group>";
 		};
 		B8B5C52A2A1BF7A300BB8DE2 /* Networking */ = {
@@ -603,6 +672,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8B5C54C2A1C3FCE00BB8DE2 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				B8B4B2422A2E7AA100982080 /* Chartowo->Berdychowo.gpx in Resources */,
 				B8B5C54B2A1C3FCE00BB8DE2 /* Montserrat-Regular.ttf in Resources */,
 				B81539852995BB9C00E439E4 /* PoznanStaticLocation.gpx in Resources */,
 				B8A349CA2A1ED067008F4DAA /* Localizable.strings in Resources */,
@@ -614,9 +684,13 @@
 				B8B5C5562A1C3FCE00BB8DE2 /* Montserrat-BoldItalic.ttf in Resources */,
 				B8A349CF2A1ED0FC008F4DAA /* Localizable.strings in Resources */,
 				B8B5C5482A1C3FCE00BB8DE2 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				B8B4B2462A2EA64000982080 /* Malta->NaMiasteczku.gpx in Resources */,
+				B8B4B23C2A2E762900982080 /* Rynek->Berdychowo.gpx in Resources */,
 				B8B5C5512A1C3FCE00BB8DE2 /* Montserrat-SemiBold.ttf in Resources */,
+				B8B4B2402A2E796C00982080 /* nadRynkiem->Berdychow0.gpx in Resources */,
 				B8B5C5502A1C3FCE00BB8DE2 /* Montserrat-Medium.ttf in Resources */,
 				B832337429907D87006127D1 /* Assets.xcassets in Resources */,
+				B8B4B2482A3011AB00982080 /* Srodka.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,12 +837,15 @@
 			files = (
 				B83234382991B7C9006127D1 /* AppDelegate.swift in Sources */,
 				B832342F2991B10C006127D1 /* NetworkManager.swift in Sources */,
+				B8A349EA2A27E073008F4DAA /* Measure.swift in Sources */,
 				B832341B29908A8D006127D1 /* MainMenuInteractor.swift in Sources */,
 				B81539662994265500E439E4 /* ParkingMapPresenter.swift in Sources */,
 				B8B5C5302A1C3B1800BB8DE2 /* MainMenuNavigationController.swift in Sources */,
 				B815398829A2E0AE00E439E4 /* UIFactory.swift in Sources */,
 				B832341829908A8D006127D1 /* MainMenuModuleProtocols.swift in Sources */,
+				B8A349E82A27E073008F4DAA /* UIImage+CVPixelBuffer.swift in Sources */,
 				B83234312991B1FD006127D1 /* ParkingSpaceModel.swift in Sources */,
+				B8B4B2342A2D656700982080 /* ParkingMapAutoRouting.swift in Sources */,
 				B83234352991B64F006127D1 /* ErrorExtensions.swift in Sources */,
 				B8A349E02A1ED6AC008F4DAA /* SettingOptionsInteractor.swift in Sources */,
 				B832341629908A8D006127D1 /* MainMenuPresenter.swift in Sources */,
@@ -777,7 +854,9 @@
 				B8A349D32A1ED159008F4DAA /* StringExtensions.swift in Sources */,
 				B81539672994265500E439E4 /* ParkingMapRouter.swift in Sources */,
 				B8B5C52C2A1C2D4300BB8DE2 /* NetworkManagerResultType.swift in Sources */,
+				B8A349EC2A27E089008F4DAA /* DrawingBoundingBoxView.swift in Sources */,
 				B8A349DB2A1ED6AC008F4DAA /* SettingOptionsModuleProtocols.swift in Sources */,
+				B8B4B24A2A30FC7800982080 /* CarbonSutraVehiclesEstimateModel.swift in Sources */,
 				B8A349DF2A1ED6AC008F4DAA /* SettingOptionsAssembly.swift in Sources */,
 				B815397229944D6C00E439E4 /* MapAnnotationCallout.swift in Sources */,
 				B815396E2994363200E439E4 /* MapAnnotation.swift in Sources */,
@@ -788,10 +867,15 @@
 				B8153980299576AC00E439E4 /* AppThemeConstants.swift in Sources */,
 				B81539652994265500E439E4 /* ParkingMapModuleProtocols.swift in Sources */,
 				B832341A29908A8D006127D1 /* MainMenuAssembly.swift in Sources */,
+				B8A349EE2A27E096008F4DAA /* ViewController.swift in Sources */,
 				B815397A299566B000E439E4 /* MapAnnotationTableViewCell.swift in Sources */,
 				B81539682994265500E439E4 /* ParkingMapViewController.swift in Sources */,
+				B8A349E92A27E073008F4DAA /* VideoCapture.swift in Sources */,
 				B8A349DC2A1ED6AC008F4DAA /* SettingOptionsPresenter.swift in Sources */,
+				B8B4B24C2A311B7D00982080 /* DoubleExtensions.swift in Sources */,
 				B832341929908A8D006127D1 /* MainMenuViewController.swift in Sources */,
+				B8A349F02A27E0E6008F4DAA /* PoznanParkingSpaceMLModel-ObjectDetectionML.mlmodel in Sources */,
+				B8B4B2252A2D543E00982080 /* UserLocationService.swift in Sources */,
 				B81539692994265500E439E4 /* ParkingMapAssembly.swift in Sources */,
 				B8B5C52E2A1C2E2C00BB8DE2 /* NetworkManagerListner.swift in Sources */,
 				B832336D29907D86006127D1 /* SceneDelegate.swift in Sources */,

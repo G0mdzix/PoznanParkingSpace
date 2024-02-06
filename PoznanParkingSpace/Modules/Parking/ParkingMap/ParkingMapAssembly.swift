@@ -1,7 +1,7 @@
 import UIKit
 
 class ParkingMapAssembly {
-  func build() -> UIViewController {
+  func build(poznanParkingList: [ParkingSpace]) -> UIViewController {
     let view = ParkingMapViewController()
     let interactor = ParkingMapInteractor()
     let router = ParkingMapRouter()
@@ -11,6 +11,7 @@ class ParkingMapAssembly {
     view.presenter = presenter
     interactor.presenter = presenter
     interactor.networkManager = netwrokManager
+    interactor.startIteractior(poznanParkingList: poznanParkingList)
     router.view = view
 
     return view

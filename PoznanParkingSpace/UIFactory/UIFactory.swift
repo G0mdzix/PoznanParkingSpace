@@ -3,6 +3,30 @@ import UIKit
 import MapKit
 
 enum UIFactory {
+  static func makeBackButton(target: Any?, action: Selector) -> UIButton {
+    let button = UIButton(type: .system)
+    button.addTarget(target, action: action, for: .touchUpInside)
+    button.contentMode = .scaleToFill
+    button.clipsToBounds = true
+    button.layer.cornerRadius = 20
+    button.backgroundColor = AppColorMode.currentMode().secondaryColor
+    button.tintColor = AppColorMode.currentMode().mainColor
+    button.setImage(UIImage(named: "leftArrow"), for: .normal)
+    return button
+  }
+
+  static func makeDetectionButton(target: Any?, action: Selector) -> UIButton {
+    let button = UIButton(type: .system)
+    button.addTarget(target, action: action, for: .touchUpInside)
+    button.contentMode = .scaleToFill
+    button.clipsToBounds = true
+    button.layer.cornerRadius = 23
+    button.backgroundColor = AppColorMode.currentMode().secondaryColor
+    button.tintColor = AppColorMode.currentMode().mainColor
+    button.setImage(UIImage(named: "carIcon"), for: .normal)
+    return button
+  }
+
   static func makeMapButton(target: Any?, action: Selector) -> UIButton {
     let button = UIButton(type: .system)
     button.backgroundColor = AppColorMode.currentMode().secondaryColor
@@ -27,10 +51,9 @@ enum UIFactory {
     return button
   }
 
-
   static func makeMapView() -> MKMapView {
     let mapView = MKMapView()
-    mapView.showsUserLocation = false
+    mapView.showsUserLocation = true
     return mapView
   }
 
@@ -69,6 +92,14 @@ enum UIFactory {
     return searchBar
   }
 
+  static func makeLabel() -> UILabel {
+    let label = UILabel()
+    label.textColor = AppColorMode.currentMode().mainColor
+    label.font = Fonts.tableViewBold
+    label.numberOfLines = 0
+    label.textAlignment = .center
+    return label
+  }
 
   static func makeUIView() -> UIView {
     let view = UIView()

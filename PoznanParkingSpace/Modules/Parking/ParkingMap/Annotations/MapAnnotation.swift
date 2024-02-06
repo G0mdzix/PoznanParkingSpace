@@ -9,6 +9,7 @@ class MapAnnotation: NSObject {
   let street: String
   let card: String
   let peka: String
+  let freeSpots: Int
 // TODO - INIT BY PARKINGMODEL STRUCT
   init(
     coordinate: CLLocationCoordinate2D,
@@ -17,7 +18,8 @@ class MapAnnotation: NSObject {
     zone: String,
     street: String,
     card: String,
-    peka: String
+    peka: String,
+    freeSpots: Int
   ) {
     self.coordinate = coordinate
     self.bilon = bilon
@@ -26,6 +28,7 @@ class MapAnnotation: NSObject {
     self.street = street
     self.card = card
     self.peka = peka
+    self.freeSpots = freeSpots
   }
 }
 

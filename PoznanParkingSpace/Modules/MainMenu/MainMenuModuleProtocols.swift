@@ -10,7 +10,7 @@ protocol MainMenuViewProtocol: AnyObject {
 // MARK: - Presenter
 
 protocol MainMenuPresenterProtocol: AnyObject {
-  func onParkingMapSelected()
+  func onParkingMapSelected(poznanParkingList: [ParkingSpace])
   func onSettingOptionsSelected()
   func onFetchPoznanParkingSpaceList()
   func getPoznanParkingList(poznanParkingList: [ParkingSpace])
@@ -34,6 +34,6 @@ protocol MainMenuInteractorProtocol: AnyObject {
 // MARK: - Router
 
 protocol MainMenuRouterProtocol: AnyObject {
-  func openParkingMap()
+  func openParkingMap(poznanParkingList: [ParkingSpace])
   func openSettingOptions()
 }

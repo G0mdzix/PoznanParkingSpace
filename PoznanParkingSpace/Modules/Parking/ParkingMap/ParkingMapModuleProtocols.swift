@@ -4,6 +4,8 @@ import Foundation
 
 protocol ParkingMapViewProtocol: AnyObject {
   func displayAnnotations(parkingAnnotationList: [MapAnnotation])
+  func removeAllAnnotations()
+  func showLabels(savedCo2: String, savedFuel: String, savedDistance: String) 
 }
 
 // MARK: - Presenter
@@ -11,6 +13,8 @@ protocol ParkingMapViewProtocol: AnyObject {
 protocol ParkingMapPresenterProtocol: AnyObject {
   func onViewDidLoad()
   func presentParkingSpaceList(parkingAnnotationList: [MapAnnotation])
+  func removeAllAnnotations()
+  func showLabels(savedCo2: String, savedFuel: String, savedDistance: String)
 }
 
 // MARK: - Interactor

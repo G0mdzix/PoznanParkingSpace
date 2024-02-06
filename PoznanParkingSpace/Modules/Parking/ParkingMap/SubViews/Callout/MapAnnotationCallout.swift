@@ -51,7 +51,7 @@ class MapAnnotationCallout: UIView {
 
 extension MapAnnotationCallout: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 6
+    return 7
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -97,6 +97,11 @@ extension MapAnnotationCallout: UITableViewDataSource {
       cell.titleLabel.text = Constants.TableView.bilonLabel
       cell.descriptionLabel.text = annotation.bilon
       cell.titleLabel.font = Fonts.defaultBold
+    case 6:
+      cell.titleLabel.text = Constants.TableView.freeSpaceLabel
+      cell.descriptionLabel.text = String(annotation.freeSpots)
+      cell.titleLabel.font = Fonts.defaultBold
+      cell.descriptionLabel.textColor = .blue
     default:
       break
     }
@@ -118,5 +123,6 @@ private enum Constants {
     static let pekaLabel = "Płatność PEKĄ: "
     static let blikLabel = "Płatność BLIKIEM: "
     static let bilonLabel = "Płatność Gotówką: "
+    static let freeSpaceLabel = "Liczba wolnych miejsc"
   }
 }

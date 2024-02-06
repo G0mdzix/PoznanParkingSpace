@@ -11,8 +11,8 @@ extension MainMenuRouter: MainMenuRouterProtocol {
     view?.present(vc, animated: true)
   }
 
-  func openParkingMap() {
-    let vc = ParkingMapAssembly().build()
+  func openParkingMap(poznanParkingList: [ParkingSpace]) {
+    let vc = ParkingMapAssembly().build(poznanParkingList: poznanParkingList)
     view?.navigationController?.pushViewController(vc, animated: true)
   }
 }

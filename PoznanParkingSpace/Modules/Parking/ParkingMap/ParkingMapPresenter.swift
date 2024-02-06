@@ -24,12 +24,20 @@ class ParkingMapPresenter {
 // MARK: - ParkingMapPresenterProtocol
 
 extension ParkingMapPresenter: ParkingMapPresenterProtocol {
+  func showLabels(savedCo2: String, savedFuel: String, savedDistance: String) {
+    view.showLabels(savedCo2: savedCo2, savedFuel: savedFuel, savedDistance: savedDistance)
+  }
+
   func onViewDidLoad() {
     interactor.fetchDataFromParkingSpaceAPI()
   }
 
   func presentParkingSpaceList(parkingAnnotationList: [MapAnnotation]) {
     view.displayAnnotations(parkingAnnotationList: parkingAnnotationList)
+  }
+
+  func removeAllAnnotations() {
+    view.removeAllAnnotations()
   }
 }
 

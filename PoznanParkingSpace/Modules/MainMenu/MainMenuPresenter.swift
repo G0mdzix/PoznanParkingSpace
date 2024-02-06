@@ -28,12 +28,18 @@ extension MainMenuPresenter: MainMenuPresenterProtocol {
   func getPoznanParkingList(poznanParkingList: [ParkingSpace]) {
     Task {
       self.poznanParkingSpaceList = poznanParkingList
+      print(poznanParkingList.count, "ile" )
       self.view?.hideLoading()
     }
   }
 
-  func onParkingMapSelected() {
-    router.openParkingMap()
+  func onParkingMapSelected(poznanParkingList: [ParkingSpace]) {
+    if poznanParkingList.isEmpty {
+      guard let poznanParkingSpaceList = poznanParkingSpaceList else { return }
+      router.openParkingMap(poznanParkingList: poznanParkingSpaceList)
+    } else {
+      router.openParkingMap(poznanParkingList: poznanParkingList)
+    }
   }
 
   func onFetchPoznanParkingSpaceList() {

@@ -120,6 +120,7 @@ extension NetworkManager: NetworkManagerListner {
       .sink(receiveCompletion: { completion in
       }, receiveValue: { parkingSpaceList in
         completion(.success(parkingSpaceList))
+        print("DUUUPA")
       })
       .store(in: &cancellables)
   }

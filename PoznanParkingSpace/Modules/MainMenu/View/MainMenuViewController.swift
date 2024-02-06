@@ -27,6 +27,14 @@ class MainMenuViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+  }
+
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    sprawdzam()
+  }
+
+  private func sprawdzam() {
     configure()
     layout()
 
@@ -34,10 +42,7 @@ class MainMenuViewController: UIViewController {
     presenter?.onFetchPoznanParkingSpaceList()
     view.backgroundColor = AppColorMode.currentMode().mainColor
     configureItems()
-  }
-
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
+    navigationController?.setNavigationBarHidden(false, animated: true)
   }
 }
 
@@ -64,6 +69,7 @@ extension MainMenuViewController {
   }
 
   private func configureTableView() {
+    tableView.delegate = self
     tableView.backgroundColor = Colors.transparent
     tableView.dataSource = self
   }
@@ -79,7 +85,7 @@ extension MainMenuViewController {
 extension MainMenuViewController {
   @objc
   private func buttonTapped() {
-    presenter?.onParkingMapSelected()
+    presenter?.onParkingMapSelected(poznanParkingList: zapamietanaTablica)
   }
 }
 
@@ -103,8 +109,7 @@ extension MainMenuViewController {
 
   private func backgroundSearchBarLayout() {
     backgroundSearchBar.snp.makeConstraints { make in
-      make.centerX.equalTo(searchBar)
-      make.centerY.equalTo(searchBar)
+      make.center.equalTo(searchBar)
       make.width.equalTo(tableView)
       make.height.equalTo(searchBar).offset(-Constans.Layout.defaultOffset)
     }

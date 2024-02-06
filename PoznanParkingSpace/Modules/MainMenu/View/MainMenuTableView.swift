@@ -39,19 +39,20 @@ extension MainMenuViewController: UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     guard let presenter = presenter else { return }
-    guard let test1 = presenter.poznanParkingFilteredListItems(at: indexPath.row) else { return }
-    guard let test2 = presenter.poznanParkingListItems(at: indexPath.row) else { return }
     switch isSearch {
     case true:
+      guard let test1 = presenter.poznanParkingFilteredListItems(at: indexPath.row) else { return }
       zapamietanaTablica = [test1] // !
     case false:
+      guard let test2 = presenter.poznanParkingListItems(at: indexPath.row) else { return }
       zapamietanaTablica = [test2] // !
     }
   }
 }
 
-extension MainMenuViewController: UISearchBarDelegate {
+extension MainMenuViewController: UITableViewDelegate {}
 
+extension MainMenuViewController: UISearchBarDelegate {
   func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
     isSearch = true
   }
